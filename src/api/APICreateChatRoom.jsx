@@ -3,11 +3,6 @@
 import { useAuth } from "../context/AuthContext"
 
 async function APICreateChatRoom({group}) {
-  const payload = {
-    user_id: group.user_id,
-    name: group.name,
-    avatar: ""
-  }
 const auth = useAuth()
 const body = JSON.stringify(group)
 const options = {
